@@ -48,17 +48,16 @@
 
 <h1>Demonstração</h1>
 
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/plano1.jpeg)
+
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/plano2.jpeg)
 
 ![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/login.jpeg)
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/tree/main/demonstração/cadastro.jpeg)
-
-![GIF](demonstração/planos.gif)
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/cadastro.jpeg)
 
 ![GIF](demonstração/transcrição.gif)
 
 ![GIF](demonstração/video1.gif)
 
 ![GIF](demonstração/api.gif)
-
-![GIF](demonstração/video2.gif)
