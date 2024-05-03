@@ -49,9 +49,9 @@
 <h1>Demonstração</h1>
 
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/tree/main/demonstra%C3%A7%C3%A3o/login.jpeg)
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/login.jpeg)
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/tree/main/demonstra%C3%A7%C3%A3o/cadastro.jpeg)
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/tree/main/demonstração/cadastro.jpeg)
 
 ![GIF](demonstração/planos.gif)
 
