@@ -6,10 +6,10 @@
 <p>Ubuntu 20.04</p>
 <p>Debian 11</p>
 
-<code>apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket-Saas-Completo && sudo git clone https://github.com/botusist/Whaticket-Saas-completo.git && cd Whaticket-Saas-Completo && sudo chmod +x ./botusist && ./botusist</code><br />
+<code>apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket-Saas-Completo && sudo git clone https://github.com/andrew890074/Whaticket-Saas-Completo.git && cd Whaticket-Saas-Completo && sudo chmod +x ./botusist && ./botusist</code><br />
 &nbsp;</p>
 
-<h3>Whatsapp Suporte: +55 (14) 99125-8125<h3>
+<h3>Whatsapp Suporte: +55 (14) 98125-8125<h3>
 
 <h3>Seja um revendedor desse sistema chame no Whatsapp: +55 (14) 98176-5524<h3>
 
@@ -46,6 +46,15 @@
 - Excluir Agendamento ✅
 
 
+<h1>Demonstração</h1>
+
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/plano1.jpeg)
+
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/plano2.jpeg)
+
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/login.jpeg)
+
+![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/cadastro.jpeg)
 
 ![GIF](demonstração/transcrição.gif)
 
