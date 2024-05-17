@@ -48,15 +48,7 @@
 
 <h1>Demonstração</h1>
 
-![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/Dashboard.jpeg)
 
-![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/plano1.jpeg)
-
-![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/plano2.jpeg)
-
-![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/login.jpeg)
-
-![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/cadastro.jpeg)
 
 ![GIF](demonstração/transcrição.gif)
 
