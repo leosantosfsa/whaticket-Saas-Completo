@@ -13,8 +13,8 @@ frontend_node_dependencies() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/frontend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/frontend
   npm install --force
 EOF
  
@@ -37,13 +37,13 @@ frontend_set_env() {
   backend_url=${backend_url%%/*}
   backend_url=https://$backend_url
 
-  sudo su - deployautomatizaai << EOF
-  cat <<[-]EOF > /home/deployautomatizaai/whaticket/frontend/.env
+  sudo su - deploybotusist << EOF
+  cat <<[-]EOF > /home/deploybotusist/whaticket/frontend/.env
 REACT_APP_BACKEND_URL=${backend_url}
 REACT_APP_ENV_TOKEN=210897ugn217204u98u8jfo2983u5
 REACT_APP_HOURS_CLOSE_TICKETS_AUTO=9999999
 REACT_APP_FACEBOOK_APP_ID=1005318707427295
-REACT_APP_NAME_SYSTEM=automatizaai
+REACT_APP_NAME_SYSTEM=botusist
 REACT_APP_VERSION="1.0.0"
 REACT_APP_PRIMARY_COLOR=$#fffff
 REACT_APP_PRIMARY_DARK=2c3145
@@ -54,8 +54,8 @@ WDS_SOCKET_PORT=0
 EOF
 
   # Execute the substitution commands
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/frontend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/frontend
 
   BACKEND_URL=${backend_url}
 
@@ -77,8 +77,8 @@ frontend_start_pm2() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/frontend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/frontend
   pm2 start server.js --name whaticket-frontend
   pm2 save
 EOF
@@ -151,17 +151,17 @@ move_whaticket_files() {
   sudo su - root <<EOF
 
 
-  sudo rm -r /home/deployautomatizaai/whaticket/frontend/automatizaai
-  sudo rm -r /home/deployautomatizaai/whaticket/frontend/package.json
-  sudo rm -r /home/deployautomatizaai/whaticket/backend/automatizaai
-  sudo rm -r /home/deployautomatizaai/whaticket/backend/package.json
-  sudo rm -rf /home/deployautomatizaai/whaticket/frontend/node_modules
-  sudo rm -rf /home/deployautomatizaai/whaticket/backend/node_modules
+  sudo rm -r /home/deploybotusist/whaticket/frontend/botusist
+  sudo rm -r /home/deploybotusist/whaticket/frontend/package.json
+  sudo rm -r /home/deploybotusist/whaticket/backend/botusist
+  sudo rm -r /home/deploybotusist/whaticket/backend/package.json
+  sudo rm -rf /home/deploybotusist/whaticket/frontend/node_modules
+  sudo rm -rf /home/deploybotusist/whaticket/backend/node_modules
 
-  sudo mv /root/whaticket/frontend/automatizaai /home/deployautomatizaai/whaticket/frontend
-  sudo mv /root/whaticket/frontend/package.json /home/deployautomatizaai/whaticket/frontend
-  sudo mv /root/whaticket/backend/automatizaai /home/deployautomatizaai/whaticket/backend
-  sudo mv /root/whaticket/backend/package.json /home/deployautomatizaai/whaticket/backend
+  sudo mv /root/whaticket/frontend/botusist /home/deploybotusist/whaticket/frontend
+  sudo mv /root/whaticket/frontend/package.json /home/deploybotusist/whaticket/frontend
+  sudo mv /root/whaticket/backend/botusist /home/deploybotusist/whaticket/backend
+  sudo mv /root/whaticket/backend/package.json /home/deploybotusist/whaticket/backend
   sudo rm -rf /root/whaticket
   sudo apt update
   sudo apt install ffmpeg
@@ -184,7 +184,7 @@ frontend_conf1() {
   backend_url=https://$backend_url
 
   sudo su - root <<EOF
-  cd /home/deployautomatizaai/whaticket/frontend
+  cd /home/deploybotusist/whaticket/frontend
 
   BACKEND_URL=${backend_url}
 
@@ -201,8 +201,8 @@ frontend_node_dependencies1() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/frontend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/frontend
   npm install --force
 EOF
 
@@ -216,8 +216,8 @@ frontend_restart_pm2() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/frontend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/frontend
   pm2 stop all
 
   pm2 start all
@@ -233,8 +233,8 @@ backend_node_dependencies1() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/backend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/backend
   npm install --force
 EOF
 
@@ -248,16 +248,16 @@ backend_db_migrate1() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/backend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/backend
   npx sequelize db:migrate
 
 EOF
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-  cd /home/deployautomatizaai/whaticket/backend
+  sudo su - deploybotusist <<EOF
+  cd /home/deploybotusist/whaticket/backend
   npx sequelize db:migrate
   
 EOF
@@ -272,8 +272,8 @@ backend_restart_pm2() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
-    cd /home/deployautomatizaai/whaticket/backend
+  sudo su - deploybotusist <<EOF
+    cd /home/deploybotusist/whaticket/backend
     pm2 stop all
     sudo rm -rf /root/Whaticket-Saas-Completo
 EOF
@@ -281,14 +281,14 @@ EOF
   sleep 2
 
   sudo su - <<EOF
-    usermod -aG sudo deployautomatizaai
+    usermod -aG sudo deploybotusist
 
-    grep -q "^deployautomatizaai ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+    grep -q "^deploybotusist ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deploybotusist ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-    echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
+    echo "deploybotusist ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
 EOF
 
-  sudo su - deployautomatizaai <<EOF
+  sudo su - deploybotusist <<EOF
     pm2 start all
 EOF
 

@@ -9,15 +9,15 @@
 #######################################
 system_create_user() {
   print_banner
-  printf "${WHITE} 💻 Agora, vamos criar o usuário para deployautomatizaai...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Agora, vamos criar o usuário para deploybotusist...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
  
   sudo su - root <<EOF
-  useradd -m -p $(openssl passwd $deploy_password) -s /bin/bash -G sudo deployautomatizaai
-  usermod -aG sudo deployautomatizaai
-  mv "${PROJECT_ROOT}"/whaticket.zip /home/deployautomatizaai/
+  useradd -m -p $(openssl passwd $deploy_password) -s /bin/bash -G sudo deploybotusist
+  usermod -aG sudo deploybotusist
+  mv "${PROJECT_ROOT}"/whaticket.zip /home/deploybotusist/
 EOF
 
   sleep 2
@@ -35,7 +35,7 @@ system_unzip_whaticket() {
 
   sleep 2
 
-  sudo su - deployautomatizaai <<EOF
+  sudo su - deploybotusist <<EOF
   unzip whaticket.zip
 EOF
 
@@ -87,7 +87,7 @@ system_node_install() {
   sudo timedatectl set-timezone America/Sao_Paulo
   sleep 2
   sudo -u postgres psql -c "ALTER USER postgres PASSWORD '2000@23';"
-  sudo -u postgres psql -c "CREATE DATABASE whaticketautomatizaai;"
+  sudo -u postgres psql -c "CREATE DATABASE whaticketbotusist;"
   exit
 EOF
 
@@ -239,8 +239,8 @@ system_pm2_install() {
 
   sudo su - root <<EOF
   npm install -g pm2
-  pm2 startup ubuntu -u deployautomatizaai
-  env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u deployautomatizaai --hp /home/deployautomatizaai
+  pm2 startup ubuntu -u deploybotusist
+  env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u deploybotusist --hp /home/deploybotusist
 EOF
 
   sleep 2 
@@ -254,12 +254,12 @@ system_execute_comand() {
   sleep 2 
 
   sudo su - root <<EOF
-  usermod -aG sudo deployautomatizaai
+  usermod -aG sudo deploybotusist
   sudo apt install ffmpeg
 
-  grep -q "^deployautomatizaai ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+  grep -q "^deploybotusist ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deploybotusist ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-  echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
+  echo "deploybotusist ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
   sudo apt install ffmpeg
 
 EOF
