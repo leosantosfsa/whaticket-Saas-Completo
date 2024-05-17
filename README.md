@@ -6,7 +6,7 @@
 <p>Ubuntu 20.04</p>
 <p>Debian 11</p>
 
-<code>apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket-Saas-Completo && sudo git clone https://github.com/andrew890074/Whaticket-Saas-Completo.git && cd Whaticket-Saas-Completo && sudo chmod +x ./automatizaai && ./automatizaai</code><br />
+<code>apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket-Saas-Completo && sudo git clone https://github.com/botusist/Whaticket-Saas-Completo.git && cd Whaticket-Saas-Completo && sudo chmod +x ./botusist && ./botusist</code><br />
 &nbsp;</p>
 
 <h3>Whatsapp Suporte: +55 (51) 99705-8551<h3>
@@ -48,15 +48,15 @@
 
 <h1>Demonstração</h1>
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/Dashboard.jpeg)
+![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/Dashboard.jpeg)
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/plano1.jpeg)
+![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/plano1.jpeg)
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/plano2.jpeg)
+![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/plano2.jpeg)
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/login.jpeg)
+![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/login.jpeg)
 
-![link About do site](https://github.com/andrew890074/Whaticket-Saas-Completo/blob/main/demonstração/cadastro.jpeg)
+![link About do site](https://github.com/botusist/Whaticket-Saas-Completo/blob/main/demonstração/cadastro.jpeg)
 
 ![GIF](demonstração/transcrição.gif)
 
